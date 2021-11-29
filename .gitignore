@@ -1,0 +1,10 @@
+# exclude folders
+node_modules/*
+.nyc_output/*
+.vscode/*
+out/*
+alternatives/*
+
+# exclude files
+jsdoc.config.json
+*.tgz

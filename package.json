@@ -1,0 +1,54 @@
+{
+  "name": "@randomorg/core",
+  "version": "1.0.1",
+  "description": "The official library to access the RANDOM.ORG JSON-RPC API",
+  "main": "./lib/index.js",
+  "module": "./lib/esm/index.js",
+  "scripts": {
+    "test": "mocha ./test/test.js --timeout 9000",
+    "test-coverage": "nyc --reporter=text mocha ./test/test.js --timeout 9000",
+    "build": "npm run build-ts && npm run build-browser && npm run build-test",
+    "build-ts": "tsc",
+    "build-browser": "rollup --config --mode='browser' && rollup --config --mode='browser' --minify",
+    "build-test": "rollup --config --mode='test'"
+  },
+  "author": "RANDOM.ORG <contact@random.org> (https://www.random.org/)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/RandomOrg/JSON-RPC-JavaScript.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^19.0.2",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "@types/node": "^16.7.2",
+    "chai": "^4.3.4",
+    "esm": "^3.2.25",
+    "mocha": "^9.1.3",
+    "nyc": "^15.1.0",
+    "rollup": "^2.56.3",
+    "rollup-plugin-ignore": "^1.0.9",
+    "rollup-plugin-strip-code": "^0.2.7",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^4.3.5"
+  },
+  "types": "./types/index.d.ts",
+  "typings": "./types/index.d.ts",
+  "exports": {
+    "require": "./lib/index.js",
+    "import": "./lib/esm/index.js"
+  },
+  "unpkg": "./lib/bundles/rdocore.iife.min.js",
+  "keywords": [
+    "RANDOM.ORG",
+    "random",
+    "randomness",
+    "basic",
+    "signed",
+    "core",
+    "api"
+  ]
+}

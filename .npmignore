@@ -1,0 +1,9 @@
+# Exclude all files first.
+*
+
+# Add the files that should be included in the final package.
+!/LICENSE.md
+!/README.md
+!/package.json
+!/lib/**/*
+!/types/**/*
