@@ -8,7 +8,7 @@ The library and its required dependencies can be installed via [npm](https://www
 ```
 npm install @randomorg/core
 ```
-Alternatively, browser-compatible bundles are available on [unpkg.com](https://unpkg.com/browse/@randomorg/core@1.0.1/). The default option when using the URL as in the example below is a minified IIFE file and all classes can be accessed through *RandomOrgCore*.
+Alternatively, browser-compatible bundles are available on [unpkg.com](https://unpkg.com/browse/@randomorg/core@1.0.2/). The default option when using the URL as in the example below is a minified IIFE file and all classes can be accessed through *RandomOrgCore*.
 ```html
 <script src="https://unpkg.com/@randomorg/core"></script>
 <script>
