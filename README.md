@@ -4,13 +4,16 @@ This is a JavaScript implementation of the RANDOM.ORG JSON-RPC API (Release 4), 
 It provides access to both the signed and unsigned methods of the API through the RandomOrgClient class. It also provides a convenience class through the RandomOrgClient class, the RandomOrgCache, for precaching requests.
 
 ## Installation
-The library and its required dependencies can be installed via [npm](insert link to package when available):
+The library and its required dependencies can be installed via [npm](https://www.npmjs.com/package/@randomorg/core):
 ```
 npm install @randomorg/core
 ```
-Alternatively, browser-compatible bundles are available on [unpkg.com](https://unpkg.com/).
+Alternatively, browser-compatible bundles are available on [unpkg.com](https://unpkg.com/browse/@randomorg/core@1.0.1/). The default option when using the URL as in the example below is a minified IIFE file and all classes can be accessed through *RandomOrgCore*.
 ```html
-<script src="UNPKG_URL"></script>
+<script src="https://unpkg.com/@randomorg/core"></script>
+<script>
+  let roc = new RandomOrgCore.RandomOrgClient('YOUR_API_KEY_HERE');
+</script>
 ```
 
 ## DEPENDENCIES
