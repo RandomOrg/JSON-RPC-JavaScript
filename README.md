@@ -1,5 +1,5 @@
 # JSON-RPC-JavaScript
-This is a JavaScript implementation of the RANDOM.ORG JSON-RPC API (Release 4), which supports all current LTS versions of NodeJS (i.e. v12+, CommonJS and ES module syntax) and can also be used in modern browsers.
+This is the official JavaScript implementation of the RANDOM.ORG JSON-RPC API (Release 4), which supports all current LTS versions of NodeJS (i.e. v12+, CommonJS and ES module syntax) and can also be used in modern browsers.
 
 It provides access to both the signed and unsigned methods of the API through the RandomOrgClient class. It also provides a convenience class through the RandomOrgClient class, the RandomOrgCache, for precaching requests.
 
@@ -8,7 +8,7 @@ The library and its required dependencies can be installed via [npm](https://www
 ```
 npm install @randomorg/core
 ```
-Alternatively, browser-compatible bundles are available on [unpkg.com](https://unpkg.com/browse/@randomorg/core@1.0.2/). The default option when using the URL as in the example below is a minified IIFE file and all classes can be accessed through *RandomOrgCore*.
+Alternatively, browser-compatible bundles are available on [unpkg.com](https://unpkg.com/browse/@randomorg/core@1.0.3/). The default option when using the URL as in the example below is a minified IIFE file and all classes can be accessed through *RandomOrgCore*.
 ```html
 <script src="https://unpkg.com/@randomorg/core"></script>
 <script>
@@ -254,6 +254,9 @@ cache.getOrWait()
   console.log('An error was thrown');
 })
 ```
+### Signature Verification
+There are two additional methods to generate signature verification URLs and HTML forms (*createUrl* and *createHtml*) using the random object and signature returned from any of the signed (value generating) methods. The generated URLs and HTML forms link to the same web page that is also shown when a result is verified using the online [Signature Verification Form](https://api.random.org/signatures/form).
+
 ## Documentation
 
 For a full list of available randomness generation functions and other features see the library documentation and https://api.random.org/json-rpc/4

@@ -1,6 +1,6 @@
 {
   "name": "@randomorg/core",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The official library to access the RANDOM.ORG JSON-RPC API",
   "main": "./lib/index.js",
   "module": "./lib/esm/index.js",
